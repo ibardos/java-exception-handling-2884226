@@ -37,7 +37,7 @@ public class FibonacciController {
     }
 
     @GetMapping("getSequence")
-    public ResponseEntity<String> retrieveFibonacciSequence(@RequestParam String fileName) throws IOException {
+    public ResponseEntity<String> retrieveFibonacciSequence(@RequestParam String fileName) {
         String sequence;
         try {
             sequence = getSequence(fileName);
